@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayDay2</title>
+    <link rel="stylesheet" href="./css/index.css">
+ 
+</head>
+<body>
+    <!-- 350x130 -->
+    <!-- 226x412 -->
+    <!-- 메인 박스 225x206  -->
+    <div class="container">
+        <header>
+            <div class="inner flex">
+                <h1><a href="#"><img src="./images/payday/logo-pd2.png" alt="로고"></a></h1>
+                <nav>
+                    <ul class="flex">
+                        <li class="mainmenu">
+                            <a href="#">GAMES</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">PAYDAY3</a>
+                                </li>
+                                <li>
+                                    <a href="#">PAYDAY2</a>
+                                </li>
+                                <li>
+                                    <a href="#">PAYDAY CRIME WAR</a>
+                                </li>
+                                <li>
+                                    <a href="#">PAYDAY:THE HEIST</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mainmenu">
+                            <a href="#">NEWS</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">PAYDAY NEWS</a>
+                                </li>
+                                <li>
+                                    <a href="#">DEVELOPER UPDATES</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mainmenu">
+                            <a href="#">SUPPORT</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">DECLARATION</a>
+                                </li>
+                                <li>
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a href="#">E-MAIL</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mainmenu">
+                            <a href="#">COMMUNITY</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">REDDIT</a>
+                                </li>
+                                <li>
+                                    <a href="#">META</a>
+                                </li>
+                                <li>
+                                    <a href="#">TWITTER</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="head"></div>
+        </header>
+        <main class="flex">
+            <div class="contents flex">
+                <div class="pd2-1">
+                    <a href="#"></a>
+                </div>
+                <div class="pd2-2">
+                    <a href="#"></a>
+                </div>
+                <div class="pd2-3">
+                    <a href="#"></a>
+                </div>
+                <div class="pd2-4">
+                    <a href="#"></a>
+                </div>
+                <div class="active">
+                    <h2>Payday2:UPDATE</h2>
+                    <a href="#"><img src="./images/payday/plus.png" alt=""></a>
+                    <ul>
+                        <li class="flex">
+                            <a href="#">Check out the Hostile Takeover Bundle</a><span>23.02.07</span>
+                        </li>
+                        <li class="flex">
+                            <a href="#">A brand new heist, new cosmetics and the conclusion to the City of Gold storyline.</a><span>23.02.01</span>
+                        </li>
+                        <li class="flex">
+                            <a href="#">A sneak peek at the upcoming DLCs and something very special if you watch all the way to the end.</a><span>23.01.25</span>
+                        </li>
+                        <li class="flex">
+                            <a href="#">The upcoming DLCs and the general status of PAYDAY 2.</a><span>23.01.20</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pd3-1">
+                    <a href="#"></a>
+                </div>
+                <div class="pd3-2">
+                    <a href="#"></a>
+                </div>
+                <div class="pd3-3">
+                    <a href="#"></a>
+                </div>
+                <div class="event">
+                    <a href="#"></a>
+                </div>
+                <div class="pd3-4">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="login">
+                    <label for="ID">EMAIL OR USERNAME</label>
+                    <input type="text" id="ID" placeholder="Enter your email or username">
+                    <label for="PW">PASSWORD</label>
+                    <input type="password" id="PW" placeholder="Password">
+                    <button type="submit">Login</button>
+                </div>
+                <input type="checkbox" id="link">
+                <label for="link">admin</label>
+                <input type="checkbox" id="idPw">
+                <label for="idPw">Account Protection</label>
+                <button class="steam flex" type="submit">
+                    <h3><a href="#">Continue With Steam</a></h3>
+                    <a href="#"><img src="./images/payday/steam.15de78bc.svg" alt=""></a>
+                </button>
+                <div class="slidewrap">
+        
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="flex">
+                <ul class="flex">
+                    <li><a href="#"><img src="./images/payday/pegi.png" alt=""></a></li>
+                    <li><a href="#"><img src="./images/payday/footimg.gif" alt=""></a></li>
+                </ul>
+                <p>"PAYDAY 2 ®" and "OVERKILL A STARBREEZE STUDIO®" are registered trademarks of STARBREEZE AB (Publ) and New Starbreeze Publishing AB and/or its affiliated companies in the United States and other countries. All other trademarks are properties of their respective owners. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./jQuery/jquery-3.6.3.min.js"></script>
+    <script>
+        $(".mainmenu").mouseenter(function(){
+            $(".head").stop().animate({height : "200px"},350)
+            $(this).find(".submenu").stop().show(350);
+        });
+
+        $(".mainmenu").mouseleave(function(){
+            $(this).find(".submenu").stop().hide(350);
+            $(".head").stop().animate({height : "0"},350)
+        });
+    </script>
+</body>
+</html>

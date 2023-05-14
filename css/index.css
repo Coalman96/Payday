@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    vertical-align: top;
+}
+.flex{
+    display: flex;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: url(../images/payday/bg2.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background: rgba(0,0,255,.25);
+}
+header{
+    width: 100%;
+    height: 84px;
+    background-color: #212326;
+    position: relative;
+}
+.head{
+    top: 84px;
+    width: 100%;
+    background: url(../images/payday/headbg\ \(2\).jpg) no-repeat;
+    border-top: 1px solid #000;
+    position: absolute;
+    z-index: 998;
+}
+.inner{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner h1{
+    width: 300px;
+}
+.inner h1 img{
+    width: 100%;
+}
+nav{
+    position: relative;
+    width: 55%;
+    margin-right: 10px;
+}
+nav ul>li{
+    flex: 1;
+}
+.mainmenu{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 999;
+    color: #fff;
+}
+.submenu a{
+    display: block;
+    padding: 10px 0;
+}
+.submenu li a:hover{
+    transform-origin: left;
+    transform: scale(1.2);
+}
+li.mainmenu>a{
+    background: url(../images/payday/menu.png);
+    display: block;
+    height: 84px;
+    text-indent: -9999px;
+}
+li.mainmenu:nth-child(1)>a{
+    width: 154px;
+}
+li.mainmenu:nth-child(2)>a{
+    background-position-x: -155px;
+    width: 140px;
+}
+li.mainmenu:nth-child(3)>a{
+    background-position-x: -310px;
+    width: 140px;
+}
+li.mainmenu:nth-child(4)>a{
+    background-position-x: -458px;
+    width: 140px;
+}
+li.mainmenu>a:hover{
+    background-position-y: -117px;
+    transition: 0.35s;
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+    height: 900px;
+    position: relative;
+    z-index: 997;
+}
+.contents{
+    padding-top: 25px;
+    width: 750px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contents div:not(.active,.event){
+    width: 225px;
+    height: 206px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.contents div a{
+    display: block;
+    height: 100%;
+}
+.active, .event{
+    width: 469px;
+    height: 206px;
+    border: 1px solid #000;
+}
+.active{
+    background-color: #212326;
+    padding: 10px;
+    color: #689C80;
+    position: relative;
+}
+.active h2{
+    width: 250px;
+    padding-bottom: 10px;
+}
+.active>a{
+    width: 5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.active ul li a:hover{
+    font-weight: 800;
+    color: #689C80;
+}
+.active ul li a{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    color: #fff;
+    font-weight: 500;
+    width: 300px;
+    line-height: 36px;
+}
+.active ul li{
+    align-items: center;
+    justify-content: space-between;
+}
+.active ul li span{
+    color: #fff;
+    font-weight: 500;
+}
+.pd2-1{
+    background: url(../images/payday/pd2-1.png);
+}
+.pd2-2{
+    background: url(../images/payday/pd2-2.png);
+}
+.pd2-3{
+    background: url(../images/payday/pd2-3.png);
+}
+.pd2-4{
+    background: url(../images/payday/pd2-4.png);
+}
+.pd3-1{
+    background: url(../images/payday/pd3-1.png);
+}
+.pd3-2{
+    background: url(../images/payday/pd3-2.png);
+}
+.pd3-3{
+    background: url(../images/payday/pd3-3.png);
+}
+.pd3-4{
+    background: url(../images/payday/pd3-4.png);
+}
+.event{
+    background: url(../images/payday/event.png);
+}
+.contents div:hover:not(.active){
+    background-position-y: -206px;
+    transition: 0.5s;
+}
+/* 470*222.5 */
+.aside{
+    padding-top: 19px;
+    width: 450px;
+}
+.aside>label{
+    color: #689C80;
+}
+.login{
+    position: relative;
+}
+.login>label{
+    display: block;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+    color: #689C80;
+    font-weight: 800;
+}
+.login>input{
+    background-color: #252525;
+    width: 320px;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+input:focus{
+    outline-style: none;
+    border-color: #000;
+}
+input::placeholder{
+    color: #ccc;
+}
+.login>button{
+    position: absolute;
+    cursor: pointer;
+    top: 45px;
+    right: 0;
+    background-color: #3b3b3b;
+    border: none;
+    color: #929292;
+    width: 100px;
+    height: 100px;
+    font-size: 1.5em;
+}
+.steam{
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    margin: 10px auto 0;
+    font-size: 1.1em;
+    background-color: #111;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.steam h3 a{
+    color: #fff;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.steam img{
+    width: 30px;
+    height: 30px;
+}
+.slidewrap{
+    background-color: #000;
+    margin-top: 30px;
+    height: 585px;
+    color: white;
+    font-size: 4rem;
+}
+footer{
+    position: relative;
+    z-index: 997;
+}
+footer div{
+    padding: 0px 15px;
+    margin-top: 50px;
+    width: 1200px;
+    height: 80px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+footer div ul{
+    align-items: center;
+    width: 150px;
+    height: 100%;
+}
+footer div p{
+    align-self: center;
+    font-size: 12px;
+    width: 950px;
+    color: white;
+}
+footer img{
+    height: 60px;
+}
